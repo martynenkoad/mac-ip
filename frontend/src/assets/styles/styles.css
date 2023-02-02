@@ -1,0 +1,383 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,500;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: black;
+  color: whitesmoke;
+  overflow-x: hidden;
+}
+
+a {
+  color: rgb(4, 174, 4);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button, .button {
+  cursor: pointer;
+}
+
+/*
+-------------------------------------------
+Fade in top
+-------------------------------------------
+*/
+@-webkit-keyframes fade-in-top {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(15px);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-top {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(15px);
+    opacity: 1;
+  }
+}
+.fade-in-top {
+  -webkit-animation: fade-in-top 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in-top 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+/*
+  -------------------------------------------
+   Text focus
+  -------------------------------------------
+*/
+@-webkit-keyframes text-focus-in {
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+.text-focus-in {
+  -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+.text-focus-in-1-delay {
+  -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) 1s both;
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) 1s both;
+}
+
+.text-focus-in-2-delay {
+  -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) 2s both;
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) 2s both;
+}
+
+.found-mac-container {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 3vw;
+  transition: all 0.2s ease;
+}
+.found-mac-container div {
+  margin: 20px 3vw;
+  width: 30vw;
+}
+.found-mac-container div h3 {
+  margin-bottom: 20px;
+  padding: 10px 0;
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 0.3px;
+  border-bottom: 1px solid #fff;
+}
+.found-mac-container div span {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 10px;
+}
+.found-mac-container div span h4 {
+  font-weight: 900;
+  font-size: 14px;
+  text-align: start;
+}
+.found-mac-container div span p {
+  font-size: 14px;
+  text-align: end;
+  max-width: 50%;
+}
+
+@media (max-width: 750px) {
+  .found-mac-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .found-mac-container div {
+    width: 70%;
+  }
+  .found-mac-container div h3 {
+    padding: 30px 0;
+  }
+}
+.main-input {
+  background-color: inherit;
+  color: #fff;
+  border: 0;
+  outline: 0;
+  font-size: 2rem;
+  text-align: center;
+  letter-spacing: 0.4px;
+  transition: border-bottom 0.2s ease;
+  padding: 10px 0;
+}
+.main-input:focus {
+  border-bottom: 3px solid #fff;
+}
+
+.basic-button {
+  background-color: #000;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+  border-radius: 10px;
+  margin: 20px;
+}
+.basic-button:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #000;
+}
+
+.basic-button:disabled {
+  background-color: rgba(255, 255, 255, 0.403);
+  color: rgba(255, 255, 255, 0.434);
+  border: 1px solid rgba(255, 255, 255, 0.434);
+}
+
+.navbar {
+  width: 100vw;
+  padding: 10px 20px;
+}
+.navbar span {
+  cursor: pointer;
+  font-size: 2rem;
+}
+.navbar div {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.837);
+  left: 50px;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #fff;
+  border-top: 1px solid rgba(255, 255, 255, 0.373);
+  border-left: 1px solid rgba(255, 255, 255, 0.179);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.618);
+  padding-top: -3px;
+}
+.navbar div a {
+  padding: 15px 5vw;
+  min-width: 150px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.585);
+}
+
+.about .header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about .header h1 {
+  padding: 20px;
+  letter-spacing: 0.3px;
+  cursor: pointer;
+}
+.about .header p {
+  font-size: 13px;
+  width: 80vw;
+  letter-spacing: 0.3px;
+  line-height: 23px;
+  color: rgba(255, 255, 255, 0.811);
+}
+.about .header p:last-of-type {
+  margin-bottom: 20px;
+}
+.about .main-section {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: flex-start;
+  padding: 0 5vw;
+  margin-top: 40px;
+}
+.about .main-section h2 {
+  font-size: 20px;
+  width: 90vw;
+  padding: 20px 0;
+}
+.about .main-section .search-input {
+  display: flex;
+  width: 100vw;
+  padding-right: 15vw;
+  justify-content: space-between;
+  align-items: center;
+}
+.about .main-section .search-input span {
+  font-size: 26px;
+}
+.about .main-section .search-input span:hover {
+  cursor: pointer;
+}
+.about .main-section .search-input input {
+  font-size: 14px;
+  width: 100%;
+  padding: 5px 10px;
+  margin: 13px 10px;
+  background-color: black;
+  outline: none;
+  border: none;
+  border-bottom: 0px solid #fff;
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+}
+.about .main-section .search-input input:focus {
+  border-bottom: 1px solid #fff;
+}
+.about .main-section .questions-container {
+  border-top: 1px solid rgba(255, 255, 255, 0.227);
+  margin: 20px 10px;
+}
+.about .main-section .questions-container .question {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.227);
+}
+.about .main-section .questions-container .question h3 {
+  padding: 10px 0;
+  letter-spacing: 0.5px;
+}
+.about .main-section .questions-container .question p {
+  font-size: 14px;
+  line-height: 23px;
+  letter-spacing: 0.2px;
+  padding-bottom: 10px;
+}
+.about .pre-tag {
+  padding: 20px 0;
+  color: rgb(4, 174, 4);
+  margin-left: -40px;
+  cursor: pointer;
+}
+
+.ip-view .main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ip-view .main .info-section {
+  display: flex;
+  width: 100%;
+  padding: 3vw;
+  justify-content: space-between;
+}
+.ip-view .main .info-section .main-info {
+  padding: 15px;
+  margin: 20px 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.227);
+}
+.ip-view .main .info-section .main-info h3 {
+  font-size: 18px;
+}
+.ip-view .main .info-section .main-info p {
+  font-size: 16px;
+}
+.ip-view .main .info-section .main-info .arrow-container {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ip-view .main .info-section .main-info .arrow-container .expand-less {
+  font-size: 20px;
+  margin-left: 10px;
+  transform: rotateZ(0deg);
+  transition: transform 0.5s linear;
+}
+.ip-view .main .info-section .main-info .arrow-container .expand-more {
+  transform: rotateZ(180deg);
+  transition: transform 0.5s linear;
+}
+.ip-view .main .info-section .additional-info {
+  padding: 0 10px;
+}
+.ip-view .main .info-section .additional-info span {
+  padding: 5px 0;
+}
+.ip-view .main .info-section .additional-info span h3 {
+  font-size: 14px;
+}
+.ip-view .main .info-section .additional-info span p {
+  font-size: 13px;
+}
+.ip-view .main .flag {
+  width: 200px;
+  padding: 20px 0 0 0;
+}
+.ip-view .main .ip-info {
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.ip-view .main span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 30vw;
+}
+.ip-view .main span h3 {
+  padding-right: 5px;
+}
+.ip-view .main span span:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  .main {
+    justify-content: center;
+    width: 100vw;
+  }
+  .main .info-section {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+  }
+  .main .info-section span {
+    width: 80vw;
+    padding: 10px;
+  }
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,20 @@
+.basic-button {
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    transition: all .3s ease;
+    border-radius: 10px;
+    margin: 20px;
+    &:hover {
+      cursor: pointer;
+      background-color: #fff;
+      color: #000;
+    }
+  }
+
+  .basic-button:disabled {
+    background-color: rgba(255, 255, 255, 0.403);
+    color: rgba(255, 255, 255, 0.434);
+    border: 1px solid rgba(255, 255, 255, 0.434);
+}

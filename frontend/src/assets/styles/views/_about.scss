@@ -1,0 +1,100 @@
+.about {
+
+    .header {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h1 {
+            padding: 20px;
+            letter-spacing: 0.3px;
+            cursor: pointer;
+        }
+        p {
+            font-size: 13px;
+            width: 80vw;
+            letter-spacing: 0.3px; 
+            line-height: 23px;
+            color: rgba(255, 255, 255, 0.811);
+            &:last-of-type {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .main-section {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: flex-start;
+        padding: 0 5vw;
+        margin-top: 40px;
+
+        h2 {
+            font-size: 20px;
+            width: 90vw;
+            padding: 20px 0;
+        }
+
+        .search-input {
+            display: flex;
+            width: 100vw;
+            padding-right: 15vw;
+            justify-content: space-between;
+            align-items: center;
+    
+            span {
+                font-size: 26px;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+            input {
+                font-size: 14px;
+                width: 100%;
+                // max-width: 400px;
+                padding: 5px 10px;
+                margin: 13px 10px;
+                background-color: black;
+                outline: none;
+                border: none;
+                border-bottom: 0px solid #fff;
+                color: #fff;
+                transition: all .5s ease-in-out;
+                &:focus {
+                    border-bottom: 1px solid #fff;
+                }
+            }
+        }
+
+        .questions-container {
+            border-top: 1px solid rgba(255, 255, 255, 0.227);
+            margin: 20px 10px;
+            .question {
+                border-bottom: 1px solid rgba(255, 255, 255, 0.227);
+
+                h3 {
+                    padding: 10px 0;
+                    letter-spacing: 0.5px;
+                }
+                p {
+                    font-size: 14px;
+                    line-height: 23px;
+                    letter-spacing: 0.2px;
+                    padding-bottom: 10px;
+                }
+            }
+        }
+    
+    }
+
+    
+    .pre-tag {
+        padding: 20px 0;
+        color: rgb(4, 174, 4);
+        margin-left: -40px;
+        cursor: pointer;
+    }
+}

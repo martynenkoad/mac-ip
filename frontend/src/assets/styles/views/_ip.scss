@@ -1,0 +1,97 @@
+.ip-view {
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .info-section {
+            display: flex;
+            width: 100%;
+            padding: 3vw;
+            justify-content: space-between;
+
+            .main-info {
+                padding: 15px;
+                margin: 20px 10px;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.227);
+                h3 {
+                    font-size: 18px;
+                }
+                p {
+                    font-size: 16px;
+                }
+                .arrow-container {
+                    width: 20%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .expand-less {
+                        font-size: 20px;
+                        margin-left: 10px;
+                        transform: rotateZ(0deg);
+                        transition: transform 0.5s linear;
+                    }
+                    .expand-more {
+                        transform: rotateZ(180deg);
+                        transition: transform 0.5s linear;
+                    }
+                }
+            }
+
+            .additional-info {
+                padding: 0 10px; 
+                span {
+                    padding: 5px 0;
+                    h3 { font-size: 14px; }
+                    p { font-size: 13px; }
+                }
+            }
+        }
+
+        .flag {
+            width: 200px;
+            padding: 20px 0 0 0;
+        }
+
+        .ip-info {
+            letter-spacing: 0.5px;
+            font-weight: 600;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+    
+        span {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 30vw;
+    
+            h3 {
+                padding-right: 5px;
+            }
+            span:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .main {
+        justify-content: center;
+        width: 100vw;
+        .info-section {
+            display: flex;
+            flex-direction: column;
+            width: 100vw;
+            align-items: center;
+
+            span {
+                width: 80vw;
+                padding: 10px;
+            }
+
+        }
+    }
+}

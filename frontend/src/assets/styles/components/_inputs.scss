@@ -1,0 +1,14 @@
+.main-input {
+    background-color: inherit;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: 0.4px;
+    transition: border-bottom .2s ease;
+    padding: 10px 0; 
+    &:focus {
+      border-bottom: 3px solid #fff;
+    }
+  }

@@ -1,0 +1,48 @@
+[
+    {
+        "id": 1,
+        "question": "What is MAC-address?",
+        "answer": "A MAC (Media Access Control) address, sometimes referred to as a hardware or physical address, is a unique, 12-character alphanumeric attribute that is used to identify individual electronic devices on a network. An example of a MAC address is: 00-B0-D0-63-C2-26. As typically represented, MAC addresses are recognizable as six groups of two hexadecimal digits, separated by hyphens, colons, or without a separator."
+    },
+    {
+        "id": 2,
+        "question": "How do you know which company has created my device?",
+        "answer": "The address typically includes a manufacturer's organizationally unique identifier (OUI). This OUI is represented in first 6 characters you may see in your MAC-address. All these OUIs are stored in MAC Address Vendor Database, and this app just connects you to this library. All these addresses are provided by IEEE - Institute of Electical and Electonics Engineers."
+    },
+    {
+        "id": 3,
+        "question": "How to find my MAC-address?",
+        "answer": "You can find your MAC-address either by using your command prompt or by searching it on your device settings. Please check this resource to have better understanding of the process of searching MAC-address:",
+        "links": "https://www.techtarget.com/searchnetworking/definition/MAC-address"
+    },
+    {
+        "id": 4,
+        "question": "What is the difference between locally and universally administrated addresses?",
+        "answer": "A locally administrated addresses (LAA) are assigned to a device by software / network administrator, while universally administrated addresses (UAA) are uniquely assigned to a device by its manufacturers. Information about that is stored in the second-least-significant bit of the first octet of the address: 0 for UAA, 1 for LAA. This bit is called U/L-bit, which is short for Universal/Local."
+    },
+    {
+        "id": 5,
+        "question": "Does virualization effect the MAC-addresses?",
+        "answer": " Each new virtual machine is started with a MAC address set by assigning the last three bytes to be unique on the local network. While this is local administration of MAC addresses, it is not an LAA in the IEEE sense."
+    },
+    {
+        "id": 6,
+        "question": "What means that my address is multicast/unicast?",
+        "answer": "Unicast type of transmission means that the frame is meant to reach only one for receiving NIC (Network Interface Controller). A unicast frame is transmitted to all nodes within the collision domain. Multicast type of transmission is when the frame will be sent only once, however, NICs will choose to accept it based on criteria. The bit which is responsible for unicast/multicast addresses is called I/G bit - short for Individual/Group. That is the least significant bit of a first octet of a MAC-address: 0 is for unicast and 1 is for multicast."
+    },
+    {
+        "id": 7,
+        "question": "What is IP-address?",
+        "answer": "IP Address (short for Internet Protocol address) is a unique numerical label that is connects your device to a network for communication. IP-address identifies the network interface of your device and provides the location of the host in network. Its role has been characterized as follows: 'A name indicates what we seek. An address indicates where it is. A route indicates how to get there.'"
+    },
+    {
+        "id": 8,
+        "question": "How can you tell about my location depending on my IP-address? And why can't you do the same knowing my MAC-address, huh?",
+        "answer": "IP address can be used to determine many things such as your country, city, etc. It's called 'Internet geolocation' - software capable of deducing the geographic position of a device connected to the Internet. There exist a number of databases where all this information stored. While your IP-address may be dynamic (as well as static), your MAC-address is provided by your device's manufacturer and can tell nothing more than the location of its manufacturer's job location."
+    },
+    {
+        "id": 9,
+        "question": "",
+        "answer": ""
+    }
+]

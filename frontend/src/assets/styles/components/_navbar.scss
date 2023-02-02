@@ -1,0 +1,29 @@
+.navbar {
+    width: 100vw;
+    padding: 10px 20px;
+
+    span {
+        cursor: pointer;
+        font-size: 2rem;
+    }
+
+    div {
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.837);
+        left: 50px;
+        display: flex;
+        flex-direction: column;
+        border-right: 1px solid #fff;
+        border-top: 1px solid rgba(255, 255, 255, 0.373);
+        border-left: 1px solid rgba(255, 255, 255, 0.179);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.618);
+        padding-top: -3px;
+
+        a {
+            padding: 15px 5vw;
+            min-width: 150px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.585);
+        }
+    }
+
+}
